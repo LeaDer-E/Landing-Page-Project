@@ -86,8 +86,6 @@ document.addEventListener("scroll", getBounding);
 //a smooth scrolling behavior with EventListener to scroll when click on buttons
 navbar.addEventListener('click', function (evt) {
     evt.preventDefault(evt);
-    //get the click button target
-    const key = evt.target;
     //if condetion to scrolls when click on buttons
     if (evt.target.classList.contains('menu__link')) {
       //Get id of elements from the href after removing the # hashtag mark with slice then >> scrollIntoView with smooth method
