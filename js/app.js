@@ -87,11 +87,11 @@ document.addEventListener("scroll", getBounding);
 navbar.addEventListener('click', function (evt) {
     evt.preventDefault(evt);
 		//get the clicked button from evt
-		key = evt.target;
+		target = evt.target;
     //if condetion to scrolls when click on buttons
-    if (evt.target.classList.contains('menu__link')) {
+    if (target.classList.contains('menu__link')) {
       //Get id of elements from the href after removing the # hashtag mark with slice then >> scrollIntoView with smooth method
-      document.getElementById(key.getAttribute('href').slice(1)).scrollIntoView({ behavior: 'smooth' });
+      document.getElementById(target.getAttribute('href').slice(1)).scrollIntoView({ behavior: 'smooth' });
     }
 });
 
